@@ -70,6 +70,20 @@
   transition: background-color ease 0.3s;
 }
 
+.untoggle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 28px;
+  height: 28px;
+  background: var(--romanSilver);
+  right: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+}
+
 .toggle:before {
   content: "";
   display: block;
