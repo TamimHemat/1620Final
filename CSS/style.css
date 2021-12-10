@@ -55,6 +55,21 @@
   transition: background-color ease 0.3s;
 }
 
+.untoggle {
+  appearance: none;
+  width: 62px;
+  height: 32px;
+  display: inline-block;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: var(--yellow);
+  transition: background-color ease 0.3s;
+}
+
 .toggle:before {
   content: "";
   display: block;
@@ -196,4 +211,23 @@ input[type=text]:focus {
 .contact button {
  background: var(--darkGreen);
  color: var(--white);
+}
+
+@media all and (max-width:600px){
+  .myForm{
+    flex-direction: column;
+    flex: 0.60;
+    height: max-content;
+    width: 90%;
+  }
+  .message{
+    order: 1;
+  }
+  .message > textarea {
+    min-width: 25rem;
+    max-width: 55rem;
+  }
+  h1, h2 {
+    font-size: 3rem;
+  }
 }
